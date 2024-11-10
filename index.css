@@ -211,3 +211,124 @@ span {
   background-color: #333;
   color: white;
 }
+
+/*footer*/
+
+footer {
+  background-color: #333;
+  color: #f1f1f1;
+  padding: 40px 20px 20px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px; /* Max width for large screens */
+  margin: 0 auto; /* Center the footer content */
+}
+
+.footer-section {
+  flex: 1 1 250px; /* Flex-grow, flex-shrink, flex-basis */
+  margin: 20px 10px;
+}
+
+.footer-logo {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #e63946;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  transition: color 0.3s;
+}
+
+.footer-links li a:hover {
+  color: #e63946;
+}
+
+.social-links {
+  margin-bottom: 15px;
+}
+
+.social-links p {
+  margin: 0 0 10px 0;
+}
+
+.social-link {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #e63946;
+}
+
+.subscribe-form {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.subscribe-form input[type="email"] {
+  flex: 1 1 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #e63946;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+  background-color: #d62828;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #555;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-bottom a {
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+  color: #e63946;
+}
