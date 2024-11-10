@@ -1,0 +1,213 @@
+/*default styling */
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/*nav bar styling */
+.nav-bar {
+  height: auto;
+  width: 100vw;
+  margin: 0px;
+  background-color: rgb(39, 37, 37);
+  display: flex;
+  align-items: center;
+}
+
+.menuItems {
+  margin-left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 0.5em;
+  cursor: pointer;
+  margin-left: 1em;
+  border-radius: 4px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0;
+  gap: 1.5em;
+}
+
+.menu a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  transition: color 1.5s;
+  cursor: pointer;
+}
+
+.menu a:hover {
+  color: orange;
+}
+
+.logIn {
+  text-align: center;
+  height: 3.75em;
+  width: 8em;
+  cursor: pointer;
+  margin: 20px;
+  background-color: #e63946;
+  border-radius: 10px;
+}
+
+.logIn a {
+  list-style: none;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*offer section*/
+.offer-section {
+  background-color: #f7f7f7;
+  padding: 2em;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://placehold.co/600x200?text=offer-image);
+}
+
+.btn {
+  position: absolute; /* set button to an absolute position */
+  top: 50%; /* adjust the top position of the button */
+  left: 48%; /* adjust the left position of the button */
+  transform: translate(-50%, -50%); /* center the button */
+  z-index: 2; /* set a higher z-index than the image */
+  background-color: rgb(39, 37, 37); /* set your desired background color */
+  color: #fff; /* set your desired text color */
+  border: none; /* remove button border */
+  padding: 10px 20px; /* set your desired padding */
+  width: 10rem;
+  height: 3rem;
+  margin: 2em;
+  cursor: pointer; /* change mouse cursor on hover */
+}
+
+/*menu section*/
+.menu-section,
+.trending-section,
+.starter-section,
+.beverages-section,
+.main-course,
+.combos-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-heading {
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 2em;
+}
+.redcolor {
+  height: 4px;
+  width: 70px;
+  background-color: red;
+}
+.menu-container {
+  background-color: #f7f7f7;
+  width: 90vw;
+  height: 70vh;
+  border-radius: 10px;
+  margin: 2em;
+}
+
+.content {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 3px solid red;
+}
+
+.content-heading {
+  font-size: 30px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+
+.content-btn {
+  background-color: black;
+  color: white;
+  height: 3em;
+  width: 6em;
+  border-radius: 5px;
+  margin-right: 1em;
+}
+
+.card-container {
+  margin: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 2px solid lightgray;
+  border-radius: 8px;
+  height: 20rem;
+  margin-right: 2em;
+  width: 18rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card img {
+  width: 18rem;
+  margin-bottom: 0.8em;
+}
+
+.menu_item_name {
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+  color: red;
+}
+
+.item_description {
+  color: gray;
+  font-size: 18px;
+  margin-left: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+.item_price {
+  font-size: 18px;
+  margin-left: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+.item_price p {
+  font-weight: 600;
+}
+
+.item_price del,
+span {
+  font-size: 12px;
+}
+
+.addtocart {
+  width: 100%;
+  margin-top: 1rem;
+  height: 3rem;
+  background-color: #333;
+  color: white;
+}
