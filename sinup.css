@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: rgb(241, 233, 233);
+  text-align: center;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.nav-bar {
+  position: fixed;
+  height: auto;
+  width: 100vw;
+  margin: 0px;
+  background-color: rgb(55, 55, 55);
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin: 0.5em;
+  cursor: pointer;
+  margin-left: 1em;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  height: 27rem;
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  border: 1px solid gray;
+  box-shadow: -13px 9px 8px rgb(220, 226, 231);
+  border-radius: 10px;
+}
+
+.login-container h1 {
+  background-color: white;
+  margin-bottom: 0.5em;
+}
+.form-data {
+  background-color: white;
+  margin-bottom: 1em;
+}
+.signup {
+  background-color: white;
+  margin-bottom: 0.5em;
+}
+
+.form-data label {
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0.5em;
+  margin-left: 2.4em;
+}
+
+.form-data input {
+  background-color: white;
+  margin-bottom: 1em;
+  width: 80%;
+  height: 3em;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.signup a {
+  background-color: white;
+  text-decoration: none;
+  color: rgb(2, 157, 240);
+}
+
+.btn {
+  width: 80%;
+  height: 3em;
+  background-color: #e63946;
+  color: white;
+  border-radius: 5px;
+}

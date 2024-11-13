@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href = "otp.css" />
+</head>
+<body>
+    <header>
+        <!--Nav Bar-->
+        <nav class="nav-bar"> 
+            <div class="logo">
+                <a href="#"><img src ="https://placehold.co/150x60?text=shop-logo" alt="Restaurat-logo"></a>
+            </div>
+        </nav>
+    </header>
+    <div class = "container">
+        <div class="login-container"> 
+            <h1>OTP Verification</h1>
+            <p>Enter the 4-digit OTP sent to register mobile number</p> 
+            <form class = "form-data" method="post"> 
+                <input type="number" id="first-number" name="first-number" required/>
+                <input type="number" id="second-number" name="second-number" required/>
+                <input type="number" id="third-number" name="third-number" required/>
+                <input type="number" id="fourth-number" name="fourth-number" required/> 
+                <div class="signup">Didn't recieve the OTP <a href="#">Resend OTP</a></div> 
+                <button type="submit" class = "btn" onclick="renderotpFile()">Verify</button> 
+            </form>  
+        </div>
+    </div>
+    <script>
+        function renderotpFile(){
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
