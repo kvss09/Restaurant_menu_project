@@ -95,7 +95,7 @@
   justify-content: center;
 }
 .search-container {
-  background-color: #f7f7f7;
+  background-color: #f8f8f8;
   width: 80%;
   height: 150px;
   border: 1px solid #f7f7f7;
@@ -120,15 +120,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
   margin-top: 2em;
 }
+.btn-group button.active {
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
 
 .btn {
-  background-color: rgb(196, 187, 187);
+  background-color: #a7a7a7;
   color: white;
   height: 30px;
-  width: 100px;
+  width: 80px;
   border-radius: 10px;
   margin-bottom: 1em;
   transition: color 1.5s;
@@ -136,6 +143,111 @@
 
 .btn:hover {
   background-color: rgb(61, 61, 61);
+}
+
+.menu-section,
+.trending-section,
+.starter-section,
+.beverages-section,
+.main-course,
+.combos-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100vw;
+}
+
+.menu-container {
+  background-color: #f7f7f7;
+  width: 100vw;
+  height: 70vh;
+  border-radius: 10px;
+  margin: 2em;
+}
+
+.content {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 3px solid red;
+}
+
+.content-heading {
+  font-size: 30px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+
+.content-btn {
+  background-color: black;
+  color: white;
+  height: 3em;
+  width: 6em;
+  border-radius: 5px;
+  margin-right: 1em;
+}
+
+.card-container {
+  margin: 2em;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5em;
+}
+
+.card {
+  border: 2px solid lightgray;
+  border-radius: 8px;
+  height: 20rem;
+  margin-right: 2em;
+  width: 18rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.card img {
+  width: 18rem;
+  margin-bottom: 0.8em;
+}
+
+.menu_item_name {
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+  color: red;
+}
+
+.item_description {
+  color: gray;
+  font-size: 18px;
+  margin-left: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+.item_price {
+  font-size: 18px;
+  margin-left: 0.7em;
+  margin-bottom: 0.5em;
+}
+
+.item_price p {
+  font-weight: 600;
+}
+
+.item_price del,
+span {
+  font-size: 12px;
+}
+
+.addtocart {
+  width: 100%;
+  margin-top: 1rem;
+  height: 3rem;
+  background-color: #333;
+  color: white;
 }
 
 footer {
