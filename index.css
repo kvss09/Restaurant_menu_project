@@ -95,7 +95,13 @@
   width: 10rem;
   height: 3rem;
   margin: 2em;
+  margin-top: 4em;
   cursor: pointer; /* change mouse cursor on hover */
+}
+
+.btn a {
+  color: #fff; /* set your desired text color */
+  text-decoration: none; /* remove underline */ /* make the text bold */
 }
 
 /*menu section*/

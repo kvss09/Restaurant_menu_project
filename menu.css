@@ -125,7 +125,7 @@
 }
 
 .btn {
-  background-color: rgb(142, 138, 138);
+  background-color: rgb(196, 187, 187);
   color: white;
   height: 30px;
   width: 100px;
@@ -135,7 +135,7 @@
 }
 
 .btn:hover {
-  background-color: #333;
+  background-color: rgb(61, 61, 61);
 }
 
 footer {
