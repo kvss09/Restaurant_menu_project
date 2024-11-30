@@ -20,19 +20,91 @@
             <h1>OTP Verification</h1>
             <p>Enter the 4-digit OTP sent to register mobile number</p> 
             <form class = "form-data" method="post"> 
-                <input type="number" id="first-number" name="first-number" required/>
+                <input type="text" class="first-number" name="first-number"  pattern="[0-9]*" inputmode="numeric" maxlength="1" required>
+
+                <input type="text" class="second-number" name="second-number" pattern="[0-9]*" inputmode="numeric" maxlength="1" required>
+
+                <input type="text" class="third-number"  name="third-number" pattern="[0-9]*" inputmode="numeric" maxlength="1" required>
+
+                <input type="text" class="fourth-number" name="fourth-number" pattern="[0-9]*" inputmode="numeric" maxlength="1" required>
+
+                <!-- <input type="number" id="first-number" name="first-number" required/>
                 <input type="number" id="second-number" name="second-number" required/>
                 <input type="number" id="third-number" name="third-number" required/>
-                <input type="number" id="fourth-number" name="fourth-number" required/> 
+                <input type="number" id="fourth-number" name="fourth-number" required/>  -->
                 <div class="signup">Didn't recieve the OTP <a href="#">Resend OTP</a></div> 
                 <button type="submit" class = "btn" onclick="renderotpFile()">Verify</button> 
             </form>  
         </div>
     </div>
     <script>
-        function renderotpFile(){
-            window.location.href = 'index.html';
+      const otpInputs = document.getElementById("form-data");
+      otpInputs.forEach((input, index) => {
+
+      input.addEventListener('input', () => {
+
+        if (input.value.length === 1 && index < otpInputs.length - 1) {
+
+          otpInputs[index + 1].focus();
+
         }
+
+      });
+
+
+
+      input.addEventListener('keydown', (e) => {
+
+        if (e.key === 'Backspace' && input.value === '' && index > 0) {
+
+          otpInputs[index - 1].focus();
+
+        }
+
+      });
+
+      });
+      function renderotpFile(){
+          window.location.href = 'index.html';
+      }
     </script>
 </body>
 </html>
+<!-- <div class="otp-inputs">
+
+    <input type="text" class="otp-input" pattern="[0-9]*" inputmode="numeric" maxlength="1" required>
+
+    <input type="text" class="otp-input" pattern="[0-9]*" inputmode="numeric" maxlength="1" required>
+
+    <input type="text" class="otp-input" pattern="[0-9]*" inputmode="numeric" maxlength="1" required>
+
+    <input type="text" class="otp-input" pattern="[0-9]*" inputmode="numeric" maxlength="1" required>
+
+  </div>
+  -->
+  <!--
+otpInputs.forEach((input, index) => {
+
+    input.addEventListener('input', () => {
+
+      if (input.value.length === 1 && index < otpInputs.length - 1) {
+
+        otpInputs[index + 1].focus();
+
+      }
+
+    });
+
+  
+
+    input.addEventListener('keydown', (e) => {
+
+      if (e.key === 'Backspace' && input.value === '' && index > 0) {
+
+        otpInputs[index - 1].focus();
+
+      }
+
+    });
+
+  }); -->

@@ -165,6 +165,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .card {
@@ -175,8 +176,11 @@
   width: 18rem;
   overflow: hidden;
   cursor: pointer;
+  transition: transform 0.2s;
 }
-
+.card:hover {
+  transform: scale(1.02);
+}
 .card img {
   width: 18rem;
   margin-bottom: 0.8em;
